@@ -8,6 +8,6 @@ Please follow the steps to install DoubleHelix first. Despite the plugin has a d
 Once done, install the plug-in with:
 
 ```
-pip install doublehelix-{{project_slug}}
+pip install doublehelix-{{cookiecutter.project_slug}}
 helix
 ```
