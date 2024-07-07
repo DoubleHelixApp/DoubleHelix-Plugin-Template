@@ -38,7 +38,7 @@ jobs:
     needs: build
     environment:
       name: testpypi
-      url: https://test.pypi.org/p/doublehelix
+      url: https://test.pypi.org/p/doublehelix-{{cookiecutter.project_slug}}
     permissions:
       id-token: write
     steps:
