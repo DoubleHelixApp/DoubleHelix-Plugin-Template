@@ -1,7 +1,7 @@
 {
     "project_name": "DoubleHelix awesome plugin",
-    "project_description": "A DoubleHelix awesome plugin!",
     "project_slug": "{{cookiecutter.project_name.lower().replace(' ', '_')}}",
+    "description": "A DoubleHelix awesome plugin!",
     "author": "myself",
     "email": "hello@{{cookiecutter.project_slug}}.com",
     "website": "https://{{cookiecutter.project_slug}}.github.io",

@@ -4,15 +4,16 @@
 This templates allow to create and publish a plug-in for DoubleHelix.
 
 ## How to use the template
-To use it, click on the button on the top-right, `Use this template`:
-- Import the project in another repository
-- Modify the `pyproject.toml` . Look for the tag `<fillme>` and supply the necessary information.
-- Add or remove any tags or classifier
-- Please maintain the convention used in the `pyproject.toml` file or the plug-in may not be accepted in the repository. Specifically, the name of the package on PyPI should be `doublehelix-<pluginname>`.
-- Start developing! Be aware the code for the plug-in needs to be under the namespace `doublehelix.plugins` in order for DoubleHelix to find it.
+To use this template you need [cookiecutter](https://cookiecutter.readthedocs.io/en/stable/). Follow its documentation to install it.
 
-## Developing
-Follow the instruction to install [DoubleHelix](https://doublehelix.app). Add your code under `helix/plugins/<pluginname>`.
+Once installed, use this template with:
+```
+cookiecutter gh:DoubleHelixApp/DoubleHelix-Plugin-Template
+```
+
+If you're using [pipx](https://github.com/pypa/pipx) and you don't have pipx executable path under PATH you may need to prepend `pipx run` to the command.
+
+Follow the interactive questionnaire to configure the plugin and start developing. The code needs to be under helix/plugins/<your-plugin-name>.
 
 ## How to publish the plugin
 - Create an account on [PyPI](https://pypi.org/).
