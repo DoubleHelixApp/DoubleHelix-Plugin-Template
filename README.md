@@ -11,9 +11,9 @@ Once installed, use this template with:
 cookiecutter gh:DoubleHelixApp/DoubleHelix-Plugin-Template
 ```
 
-If you're using [pipx](https://github.com/pypa/pipx) and you don't have pipx executable path under PATH you may need to prepend `pipx run` to the command.
+If you're using [pipx](https://github.com/pypa/pipx) and you don't have pipx executable path under `PATH` you may need to prepend `pipx run` to the command.
 
-Follow the interactive questionnaire to configure the plugin and start developing. The code needs to be under helix/plugins/<your-plugin-name>.
+Follow the interactive questionnaire to configure the plugin and start developing. The code needs to be under `helix/plugins/<your-plugin-name>`.
 
 ## How to publish the plugin
 - Create an account on [PyPI](https://pypi.org/).
