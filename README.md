@@ -1,5 +1,5 @@
 # DoubleHelix-Plugin-Template
-*NOTE*: At the moment this template is only used internally. DoubleHelix doesn't currently have a stable API and doesn't support any plug-in.
+>**NOTE**: At the moment this template is only used internally. DoubleHelix doesn't currently have a stable API and doesn't support any plug-in.
 
 This templates allow to create and publish a plug-in for DoubleHelix.
 
@@ -23,15 +23,22 @@ git push -u origin main
 ```
 
 ## How to publish the plugin
-- Create an account on [PyPI](https://pypi.org/).
-- On PyPI, under `Publishing` fill the information in the section `Add a new pending publisher`:
-    - PyPI Project Name: the name how you want your plug-in to appear on PyPI
-    - Owner: the username of the account that contains this repo
-    - Repository Name: the name of the repo containing this plugin
-    - Worklfow name: `python-publish.yml`
+- Create an account on [PyPI](https://pypi.org/) and log-in.
+- Open [this](https://pypi.org/manage/account/publishing/) page.
+- Under `Add a new pending publisher` configure as follow:
+    - **PyPI Project Name**: `doublehelix-<your-plugin-name>`
+    - **Owner**: the username of the account that contains this repo
+    - **Repository Name**: the name of the repo containing this plugin
+    - **Worklfow name**: `python-publish.yml`
 
-You're all set! Create a new release and enjoy the magic.
+You're all set! Creating a new release will trigger the GitHub workflow to build and publish the plugin on PyPI. Once published, you'll be able to see your package at the address `https://pypi.org/project/doublehelix-<your-plugin-name>`. The plug-in will be installable with:
 
-## How to add the plu-in to the DoubleHelix plugin repository
+```
+pip install doublehelix-<your-plugin-name>
+```
+
+Please use [semantic versioning](https://semver.org/) when creating a label.
+
+## How to add the plug-in to the DoubleHelix plugin repository
 
 To be done.
